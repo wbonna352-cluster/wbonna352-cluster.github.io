@@ -20,13 +20,23 @@
     ]
   },
   {
+    "objectID": "infrastructure.html",
+    "href": "infrastructure.html",
+    "title": "2  Infrastruktura",
+    "section": "",
+    "text": "Opisać sprzęt, na którym postawiony jest klaster.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Infrastruktura</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {

@@ -1,0 +1,3 @@
+# Infrastruktura
+
+Opisać sprzęt, na którym postawiony jest klaster. 
