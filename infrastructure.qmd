@@ -7,6 +7,8 @@ Celem było stworzenie niewielkiego, energooszczędnego środowiska do testów, 
 
 ## Konfiguracja sprzętowa
 
+
+
 Klaster składa się z czterech węzłów – jednego głównego (**master**) oraz trzech roboczych (**worker**).  
 Wszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe procesory Intel Core i5 serii *T* (o obniżonym poborze mocy), 24 GB pamięci RAM oraz dwa dyski – szybki NVMe na system i większy SSD SATA na dane.
 
@@ -16,6 +18,15 @@ Wszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe proc
 | node01 | worker | Dell OptiPlex 3050 | Intel Core i5-7500T | NVMe 128 GB | SSD SATA 512 GB | 24 GB DDR4 |
 | node02 | worker | Lenovo ThinkCentre M900 | Intel Core i5-6500T | NVMe 128 GB | SSD SATA 512 GB | 24 GB DDR4 |
 | node03 | worker | Lenovo ThinkCentre M900 | Intel Core i5-6500T | NVMe 128 GB | SSD SATA 512 GB | 24 GB DDR4 |
+
+---
+
+::: {.center}
+![](images/cluster.png){width=100% fig-align="center"}
+:::
+
+*Rysunek 1. Uruchomione węzły klastra umieszczone w szafce serwerowej.*
+
 
 ## Uwagi i motywacje
 
