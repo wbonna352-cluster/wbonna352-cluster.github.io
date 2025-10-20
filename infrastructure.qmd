@@ -1,3 +1,29 @@
 # Infrastruktura
 
-Opisać sprzęt, na którym postawiony jest klaster. 
+## Wprowadzenie
+
+Ten rozdział opisuje sprzęt, z którego zbudowany jest mój klaster obliczeniowy.  
+Celem było stworzenie niewielkiego, energooszczędnego środowiska do testów, automatyzacji i eksperymentów z rozproszonymi zadaniami.
+
+## Konfiguracja sprzętowa
+
+Klaster składa się z czterech węzłów – jednego głównego (**master**) oraz trzech roboczych (**worker**).  
+Wszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe procesory Intel Core i5 serii *T* (o obniżonym poborze mocy), 24 GB pamięci RAM oraz dwa dyski – szybki NVMe na system i większy SSD SATA na dane.
+
+| Węzeł | Rola | Model | Procesor | Systemowy dysk | Dysk danych | RAM |
+|:------|:------|:------------------------|:---------------------------|:------------------|:-------------------|:----------------|
+| node00 | master | Dell OptiPlex 3050 | Intel Core i5-7500T | NVMe 128 GB | SSD SATA 512 GB | 24 GB DDR4 |
+| node01 | worker | Dell OptiPlex 3050 | Intel Core i5-7500T | NVMe 128 GB | SSD SATA 512 GB | 24 GB DDR4 |
+| node02 | worker | Lenovo ThinkCentre M900 | Intel Core i5-6500T | NVMe 128 GB | SSD SATA 512 GB | 24 GB DDR4 |
+| node03 | worker | Lenovo ThinkCentre M900 | Intel Core i5-6500T | NVMe 128 GB | SSD SATA 512 GB | 24 GB DDR4 |
+
+## Uwagi i motywacje
+
+- Wszystkie maszyny mają podobne zasoby RAM i przestrzeni dyskowej, co ułatwia równoważenie zadań między węzłami.  
+- Wybór procesorów o niskim TDP (seria **T**) pozwala ograniczyć pobór mocy i hałas – kluczowe przy pracy w małym pomieszczeniu.  
+- Dyski NVMe zapewniają szybkie uruchamianie systemu i aplikacji, a SSD SATA pełni rolę magazynu danych lokalnych.  
+
+## Podsumowanie
+
+Klaster ten jest przykładem prostego, efektywnego rozwiązania sprzętowego opartego na ogólnodostępnych komputerach biurowych.  
+Mimo kompaktowej konstrukcji, zapewnia wystarczającą moc obliczeniową do pracy z kontenerami, testów rozproszonych zadań czy nauki systemów orkiestracji.

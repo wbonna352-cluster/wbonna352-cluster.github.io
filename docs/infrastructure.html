@@ -145,8 +145,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#wprowadzenie" id="toc-wprowadzenie" class="nav-link active" data-scroll-target="#wprowadzenie"><span class="header-section-number">2.1</span> Wprowadzenie</a></li>
+  <li><a href="#konfiguracja-sprzętowa" id="toc-konfiguracja-sprzętowa" class="nav-link" data-scroll-target="#konfiguracja-sprzętowa"><span class="header-section-number">2.2</span> Konfiguracja sprzętowa</a></li>
+  <li><a href="#uwagi-i-motywacje" id="toc-uwagi-i-motywacje" class="nav-link" data-scroll-target="#uwagi-i-motywacje"><span class="header-section-number">2.3</span> Uwagi i motywacje</a></li>
+  <li><a href="#podsumowanie" id="toc-podsumowanie" class="nav-link" data-scroll-target="#podsumowanie"><span class="header-section-number">2.4</span> Podsumowanie</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -170,9 +179,93 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Opisać sprzęt, na którym postawiony jest klaster.</p>
+<section id="wprowadzenie" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="wprowadzenie"><span class="header-section-number">2.1</span> Wprowadzenie</h2>
+<p>Ten rozdział opisuje sprzęt, z którego zbudowany jest mój klaster obliczeniowy.<br>
+Celem było stworzenie niewielkiego, energooszczędnego środowiska do testów, automatyzacji i eksperymentów z rozproszonymi zadaniami.</p>
+</section>
+<section id="konfiguracja-sprzętowa" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="konfiguracja-sprzętowa"><span class="header-section-number">2.2</span> Konfiguracja sprzętowa</h2>
+<p>Klaster składa się z czterech węzłów – jednego głównego (<strong>master</strong>) oraz trzech roboczych (<strong>worker</strong>).<br>
+Wszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe procesory Intel Core i5 serii <em>T</em> (o obniżonym poborze mocy), 24 GB pamięci RAM oraz dwa dyski – szybki NVMe na system i większy SSD SATA na dane.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 15%">
+<col style="width: 16%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Węzeł</th>
+<th style="text-align: left;">Rola</th>
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Procesor</th>
+<th style="text-align: left;">Systemowy dysk</th>
+<th style="text-align: left;">Dysk danych</th>
+<th style="text-align: left;">RAM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">node00</td>
+<td style="text-align: left;">master</td>
+<td style="text-align: left;">Dell OptiPlex 3050</td>
+<td style="text-align: left;">Intel Core i5-7500T</td>
+<td style="text-align: left;">NVMe 128 GB</td>
+<td style="text-align: left;">SSD SATA 512 GB</td>
+<td style="text-align: left;">24 GB DDR4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">node01</td>
+<td style="text-align: left;">worker</td>
+<td style="text-align: left;">Dell OptiPlex 3050</td>
+<td style="text-align: left;">Intel Core i5-7500T</td>
+<td style="text-align: left;">NVMe 128 GB</td>
+<td style="text-align: left;">SSD SATA 512 GB</td>
+<td style="text-align: left;">24 GB DDR4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">node02</td>
+<td style="text-align: left;">worker</td>
+<td style="text-align: left;">Lenovo ThinkCentre M900</td>
+<td style="text-align: left;">Intel Core i5-6500T</td>
+<td style="text-align: left;">NVMe 128 GB</td>
+<td style="text-align: left;">SSD SATA 512 GB</td>
+<td style="text-align: left;">24 GB DDR4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">node03</td>
+<td style="text-align: left;">worker</td>
+<td style="text-align: left;">Lenovo ThinkCentre M900</td>
+<td style="text-align: left;">Intel Core i5-6500T</td>
+<td style="text-align: left;">NVMe 128 GB</td>
+<td style="text-align: left;">SSD SATA 512 GB</td>
+<td style="text-align: left;">24 GB DDR4</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="uwagi-i-motywacje" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="uwagi-i-motywacje"><span class="header-section-number">2.3</span> Uwagi i motywacje</h2>
+<ul>
+<li>Wszystkie maszyny mają podobne zasoby RAM i przestrzeni dyskowej, co ułatwia równoważenie zadań między węzłami.<br>
+</li>
+<li>Wybór procesorów o niskim TDP (seria <strong>T</strong>) pozwala ograniczyć pobór mocy i hałas – kluczowe przy pracy w małym pomieszczeniu.<br>
+</li>
+<li>Dyski NVMe zapewniają szybkie uruchamianie systemu i aplikacji, a SSD SATA pełni rolę magazynu danych lokalnych.</li>
+</ul>
+</section>
+<section id="podsumowanie" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="podsumowanie"><span class="header-section-number">2.4</span> Podsumowanie</h2>
+<p>Klaster ten jest przykładem prostego, efektywnego rozwiązania sprzętowego opartego na ogólnodostępnych komputerach biurowych.<br>
+Mimo kompaktowej konstrukcji, zapewnia wystarczającą moc obliczeniową do pracy z kontenerami, testów rozproszonych zadań czy nauki systemów orkiestracji.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
