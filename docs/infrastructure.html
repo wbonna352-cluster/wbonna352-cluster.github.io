@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Infrastruktura – cluster-book</title>
+<title>3&nbsp; Infrastruktura – cluster-book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./summary.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./serwisy.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./infrastructure.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Infrastruktura</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./infrastructure.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastruktura</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,14 +124,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./serwisy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./infrastructure.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Infrastruktura</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastruktura</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,10 +156,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#wprowadzenie" id="toc-wprowadzenie" class="nav-link active" data-scroll-target="#wprowadzenie"><span class="header-section-number">2.1</span> Wprowadzenie</a></li>
-  <li><a href="#konfiguracja-sprzętowa" id="toc-konfiguracja-sprzętowa" class="nav-link" data-scroll-target="#konfiguracja-sprzętowa"><span class="header-section-number">2.2</span> Konfiguracja sprzętowa</a></li>
-  <li><a href="#uwagi-i-motywacje" id="toc-uwagi-i-motywacje" class="nav-link" data-scroll-target="#uwagi-i-motywacje"><span class="header-section-number">2.3</span> Uwagi i motywacje</a></li>
-  <li><a href="#podsumowanie" id="toc-podsumowanie" class="nav-link" data-scroll-target="#podsumowanie"><span class="header-section-number">2.4</span> Podsumowanie</a></li>
+  <li><a href="#wprowadzenie" id="toc-wprowadzenie" class="nav-link active" data-scroll-target="#wprowadzenie"><span class="header-section-number">3.1</span> Wprowadzenie</a></li>
+  <li><a href="#konfiguracja-sprzętowa" id="toc-konfiguracja-sprzętowa" class="nav-link" data-scroll-target="#konfiguracja-sprzętowa"><span class="header-section-number">3.2</span> Konfiguracja sprzętowa</a></li>
+  <li><a href="#uwagi-i-motywacje" id="toc-uwagi-i-motywacje" class="nav-link" data-scroll-target="#uwagi-i-motywacje"><span class="header-section-number">3.3</span> Uwagi i motywacje</a></li>
+  <li><a href="#podsumowanie" id="toc-podsumowanie" class="nav-link" data-scroll-target="#podsumowanie"><span class="header-section-number">3.4</span> Podsumowanie</a></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Infrastruktura</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastruktura</span></h1>
 </div>
 
 
@@ -179,13 +185,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="wprowadzenie" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="wprowadzenie"><span class="header-section-number">2.1</span> Wprowadzenie</h2>
+<section id="wprowadzenie" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="wprowadzenie"><span class="header-section-number">3.1</span> Wprowadzenie</h2>
 <p>Ten rozdział opisuje sprzęt, z którego zbudowany jest mój klaster obliczeniowy.<br>
 Celem było stworzenie niewielkiego, energooszczędnego środowiska do testów, automatyzacji i eksperymentów z rozproszonymi zadaniami.</p>
 </section>
-<section id="konfiguracja-sprzętowa" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="konfiguracja-sprzętowa"><span class="header-section-number">2.2</span> Konfiguracja sprzętowa</h2>
+<section id="konfiguracja-sprzętowa" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="konfiguracja-sprzętowa"><span class="header-section-number">3.2</span> Konfiguracja sprzętowa</h2>
 <p>Klaster składa się z czterech węzłów – jednego głównego (<strong>master</strong>) oraz trzech roboczych (<strong>worker</strong>).<br>
 Wszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe procesory Intel Core i5 serii <em>T</em> (o obniżonym poborze mocy), 24 GB pamięci RAM oraz dwa dyski – szybki NVMe na system i większy SSD SATA na dane.</p>
 <table class="caption-top table">
@@ -258,8 +264,8 @@ Wszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe proc
 </div>
 <p><em>Rysunek 1. Uruchomione węzły klastra umieszczone w szafce serwerowej.</em></p>
 </section>
-<section id="uwagi-i-motywacje" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="uwagi-i-motywacje"><span class="header-section-number">2.3</span> Uwagi i motywacje</h2>
+<section id="uwagi-i-motywacje" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="uwagi-i-motywacje"><span class="header-section-number">3.3</span> Uwagi i motywacje</h2>
 <ul>
 <li>Wszystkie maszyny mają podobne zasoby RAM i przestrzeni dyskowej, co ułatwia równoważenie zadań między węzłami.<br>
 </li>
@@ -268,8 +274,8 @@ Wszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe proc
 <li>Dyski NVMe zapewniają szybkie uruchamianie systemu i aplikacji, a SSD SATA pełni rolę magazynu danych lokalnych.</li>
 </ul>
 </section>
-<section id="podsumowanie" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="podsumowanie"><span class="header-section-number">2.4</span> Podsumowanie</h2>
+<section id="podsumowanie" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="podsumowanie"><span class="header-section-number">3.4</span> Podsumowanie</h2>
 <p>Klaster ten jest przykładem prostego, efektywnego rozwiązania sprzętowego opartego na ogólnodostępnych komputerach biurowych.<br>
 Mimo kompaktowej konstrukcji, zapewnia wystarczającą moc obliczeniową do pracy z kontenerami, testów rozproszonych zadań czy nauki systemów orkiestracji.</p>
 
@@ -679,13 +685,13 @@ Mimo kompaktowej konstrukcji, zapewnia wystarczającą moc obliczeniową do prac
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./serwisy.html" class="pagination-link" aria-label="💻 Schemat Serwisów na Węzłach Klastra">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Wojciech Bonna">
-<meta name="dcterms.date" content="2025-10-15">
 
-<title>cluster-book</title>
+<title>2&nbsp; 💻 Schemat Serwisów na Węzłach Klastra – cluster-book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./infrastructure.html" rel="next">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -84,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./serwisy.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -113,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -125,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./serwisy.html" class="sidebar-item-text sidebar-link">
+  <a href="./serwisy.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></span></a>
   </div>
 </li>
@@ -152,40 +151,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">cluster-book</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Wojciech Bonna </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 15, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -195,13 +176,190 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<p>Poniższa tabela przedstawia rozmieszczenie kluczowych serwisów na węzłach klastra. Węzeł <code>node00</code> pełni rolę <strong>mastera</strong>, a pozostałe (<code>node01</code> - <code>node03</code>) to <strong>workery</strong>.</p>
+<table class="table table-bordered" id="tbl-serwisy-klastra" style="width: 100%;">
+<thead>
+<tr>
+<th>
+Serwis
+</th>
+<th style="text-align: center;">
+node00 (Master)
+</th>
+<th style="text-align: center;">
+node01 (Worker)
+</th>
+<th style="text-align: center;">
+node02 (Worker)
+</th>
+<th style="text-align: center;">
+node03 (Worker)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="category-row">
+<td colspan="5" style="text-align: center; vertical-align: middle;">
+<strong>ZARZĄDZANIE DANYMI I PRZETWARZANIE</strong>
+</td>
+</tr>
+<tr>
+<td>
+Spark Master
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Spark Worker
+</td>
+<td>
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px">
+</td>
+</tr>
+<tr>
+<td>
+Kafka (Broker)
+</td>
+<td>
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px">
+</td>
+</tr>
+<tr>
+<td>
+MinIO (Object Storage)
+</td>
+<td>
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px">
+</td>
+</tr>
+<tr class="category-row">
+<td colspan="5" style="text-align: center; vertical-align: middle;">
+<strong>ORCHESTRACJA I SCHEDULING</strong>
+</td>
+</tr>
+<tr>
+<td>
+Airflow Webserver
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Airflow Scheduler
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Airflow Worker
+</td>
+<td>
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px">
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px">
+</td>
+</tr>
+<tr class="category-row">
+<td colspan="5" style="text-align: center; vertical-align: middle;">
+<strong>NARZĘDZIA DEWELOPERSKIE I BAZY DANYCH</strong>
+</td>
+</tr>
+<tr>
+<td>
+JupyterLab
+</td>
+<td style="text-align: center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="45px">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+PostgreSQL
+</td>
+<td style="text-align: center;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="45px">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<style>
+#tbl-serwisy-klastra .category-row td {
+    background-color: #f0f0f0 !important; 
+    font-weight: bold;
+}
+#tbl-serwisy-klastra td {
+    vertical-align: middle;
+}
+</style>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -606,10 +764,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./infrastructure.html" class="pagination-link" aria-label="Infrastruktura">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastruktura</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
