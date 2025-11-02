@@ -1,0 +1,96 @@
+## 💻 Schemat Serwisów na Węzłach Klastra
+
+Poniższa tabela przedstawia rozmieszczenie kluczowych serwisów na węzłach klastra.
+Węzeł `node00` pełni rolę **mastera**, a pozostałe (`node01` - `node03`) to **workery**.
+
+<table class="table table-bordered" id="tbl-serwisy-klastra" style="width: 100%;">
+<thead>
+    <tr>
+        <th>Serwis</th>
+        <th style="text-align: center;">node00 (Master)</th>
+        <th style="text-align: center;">node01 (Worker)</th>
+        <th style="text-align: center;">node02 (Worker)</th>
+        <th style="text-align: center;">node03 (Worker)</th>
+    </tr>
+</thead>
+<tbody>
+    <tr class="category-row">
+        <td colspan="5" style="text-align: center; vertical-align: middle;">
+            <strong>ZARZĄDZANIE DANYMI I PRZETWARZANIE</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>Spark Master</td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Spark Worker</td>
+        <td></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
+    </tr>
+    <tr>
+        <td>Kafka (Broker)</td>
+        <td></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px"></td>
+    </tr>
+    <tr>
+        <td>MinIO (Object Storage)</td>
+        <td></td>
+        <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px"></td> <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px"></td>
+    </tr>
+
+    <tr class="category-row">
+        <td colspan="5" style="text-align: center; vertical-align: middle;">
+            <strong>ORCHESTRACJA I SCHEDULING</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>Airflow Webserver</td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td> <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Airflow Scheduler</td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Airflow Worker</td>
+        <td></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
+    </tr>
+
+    <tr class="category-row">
+        <td colspan="5" style="text-align: center; vertical-align: middle;">
+            <strong>NARZĘDZIA DEWELOPERSKIE I BAZY DANYCH</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>JupyterLab</td>
+        <td style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="45px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>PostgreSQL</td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="45px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+</tbody>
+</table>
+
+<style>
+#tbl-serwisy-klastra .category-row td {
+    background-color: #f0f0f0 !important; 
+    font-weight: bold;
+}
+#tbl-serwisy-klastra td {
+    vertical-align: middle;
+}
+</style>
