@@ -5,12 +5,13 @@ project:
 
 book:
   title: "cluster-book"
-  author: "Norah Jones"
+  author: "Wojciech Bonna"
   date: "10/15/2025"
   chapters:
     - index.qmd
     - intro.qmd
     - serwisy.qmd
+    - infrastructure.qmd
     - summary.qmd
     - references.qmd
 
