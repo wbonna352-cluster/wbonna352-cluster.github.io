@@ -1,7 +1,7 @@
 ## 💻 Schemat Serwisów na Węzłach Klastra
 
 Poniższa tabela przedstawia rozmieszczenie kluczowych serwisów na węzłach klastra.
-Węzeł `node00` pełni rolę **mastera**, a pozostałe (`node01` - `node03`) to **workery**.
+Węzeł `node00` pełni rolę **mastera** (manager), a pozostałe (`node01` - `node03`) to **workery**.
 
 <table class="table table-bordered" id="tbl-serwisy-klastra" style="width: 100%;">
 <thead>
@@ -21,28 +21,29 @@ Węzeł `node00` pełni rolę **mastera**, a pozostałe (`node01` - `node03`) to
     </tr>
     <tr>
         <td>Spark Master</td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px"></td>
         <td></td><td></td><td></td>
     </tr>
     <tr>
         <td>Spark Worker</td>
         <td></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px"></td>
     </tr>
     <tr>
         <td>Kafka (Broker)</td>
         <td></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px"></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px"></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="40px"></td>
     </tr>
     <tr>
         <td>MinIO (Object Storage)</td>
         <td></td>
-        <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px"></td> <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px"></td>
-        <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="40px"></td> 
+        <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="40px"></td>
     </tr>
 
     <tr class="category-row">
@@ -52,19 +53,19 @@ Węzeł `node00` pełni rolę **mastera**, a pozostałe (`node01` - `node03`) to
     </tr>
     <tr>
         <td>Airflow Webserver</td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td> <td></td><td></td><td></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px"></td> <td></td><td></td><td></td>
     </tr>
     <tr>
         <td>Airflow Scheduler</td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px"></td>
         <td></td><td></td><td></td>
     </tr>
     <tr>
         <td>Airflow Worker</td>
         <td></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px"></td>
     </tr>
 
     <tr class="category-row">
@@ -74,22 +75,67 @@ Węzeł `node00` pełni rolę **mastera**, a pozostałe (`node01` - `node03`) to
     </tr>
     <tr>
         <td>JupyterLab</td>
-        <td style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="40px"></td>
         <td></td><td></td><td></td>
     </tr>
     <tr>
         <td>PostgreSQL</td>
-        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="45px"></td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="40px"></td>
         <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Redis (Broker Airflow)</td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" width="40px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Kafka-UI (Web)</td>
+        <td style="text-align: center;"><img src="https://raw.githubusercontent.com/provectus/kafka-ui/master/documentation/logo.svg" width="40px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Homepage (Homer)</td>
+        <td style="text-align: center;"><img src="https://raw.githubusercontent.com/b4bz/Homer/main/public/logo.png" width="40px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+
+    <tr class="category-row">
+        <td colspan="5" style="text-align: center; vertical-align: middle;">
+            <strong>MONITOROWANIE I LOGOWANIE</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>Prometheus</td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg" width="40px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Grafana</td>
+        <td style="text-align: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" width="40px"></td>
+        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>Node Exporter</td>
+        <td style="text-align: center;"><img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px"></td> <td style="text-align: center;"><img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px"></td>
+        <td style="text-align: center;"><img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px"></td>
+    </tr>
+    <tr>
+        <td>cAdvisor</td>
+        <td style="text-align: center;"><img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px"></td> <td style="text-align: center;"><img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px"></td>
+        <td style="text-align: center;"><img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px"></td>
+        <td style="text-align: center;"><img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px"></td>
     </tr>
 </tbody>
 </table>
 
 <style>
+/* Styl dla wierszy kategorii: szare tło i wyśrodkowanie */
 #tbl-serwisy-klastra .category-row td {
     background-color: #f0f0f0 !important; 
     font-weight: bold;
 }
+/* Upewnienie się, że komórki są wyśrodkowane pionowo i poziomo */
 #tbl-serwisy-klastra td {
     vertical-align: middle;
 }
