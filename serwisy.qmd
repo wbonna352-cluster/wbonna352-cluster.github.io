@@ -47,7 +47,7 @@ Węzeł `node00` pełni rolę **mastera**, a pozostałe (`node01`, `node02`, `no
     </tr>
     <tr class="category-row">
         <td colspan="5" style="text-align: center; vertical-align: middle;">
-            <strong>ORCHESTRACJA I SCHEDULING</strong>
+            <strong>ORKIERSTRACJA I PLANOWANIE ZADAŃ</strong>
         </td>
     </tr>
     <tr>
