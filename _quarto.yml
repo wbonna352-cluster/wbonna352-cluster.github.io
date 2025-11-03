@@ -10,8 +10,8 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - serwisy.qmd
     - infrastructure.qmd
+    - serwisy.qmd
     - summary.qmd
     - references.qmd
 
@@ -22,8 +22,3 @@ format:
     theme:
       - cosmo
       - brand
-  pdf:
-    documentclass: scrreprt
-
-
-

@@ -20,53 +20,53 @@
     ]
   },
   {
-    "objectID": "serwisy.html",
-    "href": "serwisy.html",
-    "title": "2  💻 Schemat Serwisów na Węzłach Klastra",
-    "section": "",
-    "text": "Poniższa tabela przedstawia rozmieszczenie kluczowych serwisów na węzłach klastra. Węzeł node00 pełni rolę mastera (manager), a pozostałe (node01 - node03) to workery.\n\n\n\n\nSerwis\n\n\nnode00 (Master)\n\n\nnode01 (Worker)\n\n\nnode02 (Worker)\n\n\nnode03 (Worker)\n\n\n\n\n\n\nZARZĄDZANIE DANYMI I PRZETWARZANIE\n\n\n\n\nSpark Master\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpark Worker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKafka (Broker)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMinIO (Object Storage)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nORCHESTRACJA I SCHEDULING\n\n\n\n\nAirflow Webserver\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirflow Scheduler\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirflow Worker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNARZĘDZIA DEWELOPERSKIE I BAZY DANYCH\n\n\n\n\nJupyterLab\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostgreSQL\n\n\n\n\n\n\n\n\n\n\n\n\n\nRedis (Broker Airflow)\n\n\n\n\n\n\n\n\n\n\n\n\n\nKafka-UI (Web)\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomepage (Homer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nMONITOROWANIE I LOGOWANIE\n\n\n\n\nPrometheus\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrafana\n\n\n\n\n\n\n\n\n\n\n\n\n\nNode Exporter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncAdvisor",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>💻 Schemat Serwisów na Węzłach Klastra</span>"
-    ]
-  },
-  {
     "objectID": "infrastructure.html",
     "href": "infrastructure.html",
-    "title": "3  Infrastruktura",
+    "title": "2  Infrastruktura",
     "section": "",
-    "text": "3.1 Wprowadzenie\nTen rozdział opisuje sprzęt, z którego zbudowany jest mój klaster obliczeniowy.\nCelem było stworzenie niewielkiego, energooszczędnego środowiska do testów, automatyzacji i eksperymentów z rozproszonymi zadaniami.",
+    "text": "2.1 Wprowadzenie\nTen rozdział opisuje sprzęt, z którego zbudowany jest mój klaster obliczeniowy.\nCelem było stworzenie niewielkiego, energooszczędnego środowiska do testów, automatyzacji i eksperymentów z rozproszonymi zadaniami.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Infrastruktura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Infrastruktura</span>"
     ]
   },
   {
     "objectID": "infrastructure.html#konfiguracja-sprzętowa",
     "href": "infrastructure.html#konfiguracja-sprzętowa",
-    "title": "3  Infrastruktura",
-    "section": "3.2 Konfiguracja sprzętowa",
-    "text": "3.2 Konfiguracja sprzętowa\nKlaster składa się z czterech węzłów – jednego głównego (master) oraz trzech roboczych (worker).\nWszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe procesory Intel Core i5 serii T (o obniżonym poborze mocy), 24 GB pamięci RAM oraz dwa dyski – szybki NVMe na system i większy SSD SATA na dane.\n\n\n\n\n\n\n\n\n\n\n\n\nWęzeł\nRola\nModel\nProcesor\nSystemowy dysk\nDysk danych\nRAM\n\n\n\n\nnode00\nmaster\nDell OptiPlex 3050\nIntel Core i5-7500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\nnode01\nworker\nDell OptiPlex 3050\nIntel Core i5-7500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\nnode02\nworker\nLenovo ThinkCentre M900\nIntel Core i5-6500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\nnode03\nworker\nLenovo ThinkCentre M900\nIntel Core i5-6500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\n\n\n\n\n\n\n\n\n\nRysunek 1. Uruchomione węzły klastra umieszczone w szafce serwerowej.",
+    "title": "2  Infrastruktura",
+    "section": "2.2 Konfiguracja sprzętowa",
+    "text": "2.2 Konfiguracja sprzętowa\nKlaster składa się z czterech węzłów – jednego głównego (master) oraz trzech roboczych (worker).\nWszystkie maszyny to komputery klasy desktop, wyposażone w czterordzeniowe procesory Intel Core i5 serii T (o obniżonym poborze mocy), 24 GB pamięci RAM oraz dwa dyski – szybki NVMe na system i większy SSD SATA na dane.\n\n\n\n\n\n\n\n\n\n\n\n\nWęzeł\nRola\nModel\nProcesor\nSystemowy dysk\nDysk danych\nRAM\n\n\n\n\nnode00\nmaster\nDell OptiPlex 3050\nIntel Core i5-7500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\nnode01\nworker\nDell OptiPlex 3050\nIntel Core i5-7500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\nnode02\nworker\nLenovo ThinkCentre M900\nIntel Core i5-6500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\nnode03\nworker\nLenovo ThinkCentre M900\nIntel Core i5-6500T\nNVMe 128 GB\nSSD SATA 512 GB\n24 GB DDR4\n\n\n\n\n\n\n\n\n\n\n\nRysunek 1. Uruchomione węzły klastra umieszczone w szafce serwerowej.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Infrastruktura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Infrastruktura</span>"
     ]
   },
   {
     "objectID": "infrastructure.html#uwagi-i-motywacje",
     "href": "infrastructure.html#uwagi-i-motywacje",
-    "title": "3  Infrastruktura",
-    "section": "3.3 Uwagi i motywacje",
-    "text": "3.3 Uwagi i motywacje\n\nWszystkie maszyny mają podobne zasoby RAM i przestrzeni dyskowej, co ułatwia równoważenie zadań między węzłami.\n\nWybór procesorów o niskim TDP (seria T) pozwala ograniczyć pobór mocy i hałas – kluczowe przy pracy w małym pomieszczeniu.\n\nDyski NVMe zapewniają szybkie uruchamianie systemu i aplikacji, a SSD SATA pełni rolę magazynu danych lokalnych.",
+    "title": "2  Infrastruktura",
+    "section": "2.3 Uwagi i motywacje",
+    "text": "2.3 Uwagi i motywacje\n\nWszystkie maszyny mają podobne zasoby RAM i przestrzeni dyskowej, co ułatwia równoważenie zadań między węzłami.\n\nWybór procesorów o niskim TDP (seria T) pozwala ograniczyć pobór mocy i hałas – kluczowe przy pracy w małym pomieszczeniu.\n\nDyski NVMe zapewniają szybkie uruchamianie systemu i aplikacji, a SSD SATA pełni rolę magazynu danych lokalnych.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Infrastruktura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Infrastruktura</span>"
     ]
   },
   {
     "objectID": "infrastructure.html#podsumowanie",
     "href": "infrastructure.html#podsumowanie",
-    "title": "3  Infrastruktura",
-    "section": "3.4 Podsumowanie",
-    "text": "3.4 Podsumowanie\nKlaster ten jest przykładem prostego, efektywnego rozwiązania sprzętowego opartego na ogólnodostępnych komputerach biurowych.\nMimo kompaktowej konstrukcji, zapewnia wystarczającą moc obliczeniową do pracy z kontenerami, testów rozproszonych zadań czy nauki systemów orkiestracji.",
+    "title": "2  Infrastruktura",
+    "section": "2.4 Podsumowanie",
+    "text": "2.4 Podsumowanie\nKlaster ten jest przykładem prostego, efektywnego rozwiązania sprzętowego opartego na ogólnodostępnych komputerach biurowych.\nMimo kompaktowej konstrukcji, zapewnia wystarczającą moc obliczeniową do pracy z kontenerami, testów rozproszonych zadań czy nauki systemów orkiestracji.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Infrastruktura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Infrastruktura</span>"
+    ]
+  },
+  {
+    "objectID": "serwisy.html",
+    "href": "serwisy.html",
+    "title": "3  Schemat Serwisów na Węzłach Klastra",
+    "section": "",
+    "text": "Poniższa tabela przedstawia rozmieszczenie serwisów na węzłach klastra. Węzeł node00 pełni rolę mastera, a pozostałe (node01, node02, node03) to workery.\n\n\n\n\nSerwis\n\n\nnode00 (Master)\n\n\nnode01 (Worker)\n\n\nnode02 (Worker)\n\n\nnode03 (Worker)\n\n\n\n\n\n\nZARZĄDZANIE DANYMI I PRZETWARZANIE\n\n\n\n\nSpark Master\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpark Worker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKafka (Broker)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMinIO (Object Storage)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nORCHESTRACJA I SCHEDULING\n\n\n\n\nAirflow Webserver\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirflow Scheduler\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirflow Worker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNARZĘDZIA DEWELOPERSKIE I BAZY DANYCH\n\n\n\n\nJupyterLab\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostgreSQL\n\n\n\n\n\n\n\n\n\n\n\n\n\nRedis (Broker Airflow)\n\n\n\n\n\n\n\n\n\n\n\n\n\nKafka-UI (Web)\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomepage (Homer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nMONITOROWANIE I LOGOWANIE\n\n\n\n\nPrometheus\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrafana\n\n\n\n\n\n\n\n\n\n\n\n\n\nNode Exporter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncAdvisor",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Schemat Serwisów na Węzłach Klastra</span>"
     ]
   },
   {

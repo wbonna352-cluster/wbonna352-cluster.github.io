@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; 💻 Schemat Serwisów na Węzłach Klastra – cluster-book</title>
+<title>3&nbsp; Schemat Serwisów na Węzłach Klastra – cluster-book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./infrastructure.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./infrastructure.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./serwisy.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./serwisy.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Schemat Serwisów na Węzłach Klastra</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,14 +124,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./serwisy.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></span></a>
+  <a href="./infrastructure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Infrastruktura</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./infrastructure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastruktura</span></span></a>
+  <a href="./serwisy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Schemat Serwisów na Węzłach Klastra</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">💻 Schemat Serwisów na Węzłach Klastra</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Schemat Serwisów na Węzłach Klastra</span></h1>
 </div>
 
 
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Poniższa tabela przedstawia rozmieszczenie kluczowych serwisów na węzłach klastra. Węzeł <code>node00</code> pełni rolę <strong>mastera</strong> (manager), a pozostałe (<code>node01</code> - <code>node03</code>) to <strong>workery</strong>.</p>
+<p>Poniższa tabela przedstawia rozmieszczenie serwisów na węzłach klastra. Węzeł <code>node00</code> pełni rolę <strong>mastera</strong>, a pozostałe (<code>node01</code>, <code>node02</code>, <code>node03</code>) to <strong>workery</strong>.</p>
 <table class="table table-bordered" id="tbl-serwisy-klastra" style="width: 100%;">
 <thead>
 <tr>
@@ -208,7 +208,7 @@ node03 (Worker)
 Spark Master
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px">
+<img src="images/icons/spark.svg" width="40px">
 </td>
 <td>
 </td>
@@ -224,13 +224,13 @@ Spark Worker
 <td>
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px">
+<img src="images/icons/spark.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px">
+<img src="images/icons/spark.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" width="40px">
+<img src="images/icons/spark.svg" width="40px">
 </td>
 </tr>
 <tr>
@@ -240,13 +240,13 @@ Kafka (Broker)
 <td>
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="40px">
+<img src="images/icons/kafka.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="40px">
+<img src="images/icons/kafka.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" width="40px">
+<img src="images/icons/kafka.svg" width="40px">
 </td>
 </tr>
 <tr>
@@ -256,13 +256,13 @@ MinIO (Object Storage)
 <td>
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="40px">
+<img src="images/icons/minio.svg" height="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="40px">
+<img src="images/icons/minio.svg" height="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.worldvectorlogo.com/logos/minio-1.svg" width="40px">
+<img src="images/icons/minio.svg" height="40px">
 </td>
 </tr>
 <tr class="category-row">
@@ -275,7 +275,7 @@ MinIO (Object Storage)
 Airflow Webserver
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px">
+<img src="images/icons/airflow.svg" width="40px">
 </td>
 <td>
 </td>
@@ -289,7 +289,7 @@ Airflow Webserver
 Airflow Scheduler
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px">
+<img src="images/icons/airflow.svg" width="40px">
 </td>
 <td>
 </td>
@@ -305,13 +305,13 @@ Airflow Worker
 <td>
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px">
+<img src="images/icons/airflow.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px">
+<img src="images/icons/airflow.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40px">
+<img src="images/icons/airflow.svg" width="40px">
 </td>
 </tr>
 <tr class="category-row">
@@ -324,7 +324,7 @@ Airflow Worker
 JupyterLab
 </td>
 <td style="text-align: center;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="40px">
+<img src="images/icons/jupyter.svg" width="40px">
 </td>
 <td>
 </td>
@@ -338,7 +338,7 @@ JupyterLab
 PostgreSQL
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="40px">
+<img src="images/icons/postgres.svg" width="40px">
 </td>
 <td>
 </td>
@@ -352,7 +352,7 @@ PostgreSQL
 Redis (Broker Airflow)
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" width="40px">
+<img src="images/icons/redis.svg" width="40px">
 </td>
 <td>
 </td>
@@ -366,7 +366,7 @@ Redis (Broker Airflow)
 Kafka-UI (Web)
 </td>
 <td style="text-align: center;">
-<img src="https://raw.githubusercontent.com/provectus/kafka-ui/master/documentation/logo.svg" width="40px">
+<img src="images/icons/kafka-ui.png" width="40px">
 </td>
 <td>
 </td>
@@ -380,7 +380,7 @@ Kafka-UI (Web)
 Homepage (Homer)
 </td>
 <td style="text-align: center;">
-<img src="https://raw.githubusercontent.com/b4bz/Homer/main/public/logo.png" width="40px">
+<img src="images/icons/homer.png" width="40px">
 </td>
 <td>
 </td>
@@ -399,7 +399,7 @@ Homepage (Homer)
 Prometheus
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg" width="40px">
+<img src="images/icons/prometheus.svg" width="40px">
 </td>
 <td>
 </td>
@@ -413,7 +413,7 @@ Prometheus
 Grafana
 </td>
 <td style="text-align: center;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" width="40px">
+<img src="images/icons/grafana.svg" width="40px">
 </td>
 <td>
 </td>
@@ -427,16 +427,16 @@ Grafana
 Node Exporter
 </td>
 <td style="text-align: center;">
-<img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px">
+<img src="images/icons/prometheus.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px">
+<img src="images/icons/prometheus.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px">
+<img src="images/icons/prometheus.svg" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://promlabs.com/assets/images/prometheus-logo-vector.svg" width="40px">
+<img src="images/icons/prometheus.svg" width="40px">
 </td>
 </tr>
 <tr>
@@ -444,16 +444,16 @@ Node Exporter
 cAdvisor
 </td>
 <td style="text-align: center;">
-<img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px">
+<img src="images/icons/cadvisor.png" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px">
+<img src="images/icons/cadvisor.png" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px">
+<img src="images/icons/cadvisor.png" width="40px">
 </td>
 <td style="text-align: center;">
-<img src="https://storage.googleapis.com/gcr-public-images/cAdvisor_144x144.png" width="40px">
+<img src="images/icons/cadvisor.png" width="40px">
 </td>
 </tr>
 </tbody>
@@ -875,13 +875,13 @@ cAdvisor
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./infrastructure.html" class="pagination-link" aria-label="Infrastruktura">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Infrastruktura</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./infrastructure.html" class="pagination-link" aria-label="Infrastruktura">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastruktura</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
