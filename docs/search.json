@@ -10,16 +10,6 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
     "objectID": "infrastructure.html",
     "href": "infrastructure.html",
     "title": "2  Infrastruktura",
@@ -67,26 +57,6 @@
     "text": "Poniższa tabela przedstawia rozmieszczenie serwisów na węzłach klastra. Węzeł node00 pełni rolę mastera, a pozostałe (node01, node02, node03) to workery.\n\n\n\n\nSerwis\n\n\nnode00 (Master)\n\n\nnode01 (Worker)\n\n\nnode02 (Worker)\n\n\nnode03 (Worker)\n\n\n\n\n\n\nZARZĄDZANIE DANYMI I PRZETWARZANIE\n\n\n\n\nSpark Master\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpark Worker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKafka (Broker)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMinIO (Object Storage)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nORKIERSTRACJA I PLANOWANIE ZADAŃ\n\n\n\n\nAirflow Webserver\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirflow Scheduler\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirflow Worker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNARZĘDZIA DEWELOPERSKIE I BAZY DANYCH\n\n\n\n\nJupyterLab\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostgreSQL\n\n\n\n\n\n\n\n\n\n\n\n\n\nRedis (Broker Airflow)\n\n\n\n\n\n\n\n\n\n\n\n\n\nKafka-UI (Web)\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomepage (Homer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nMONITOROWANIE I LOGOWANIE\n\n\n\n\nPrometheus\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrafana\n\n\n\n\n\n\n\n\n\n\n\n\n\nNode Exporter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncAdvisor",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Schemat Serwisów na Węzłach Klastra</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "4  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "References"
     ]
   }
 ]

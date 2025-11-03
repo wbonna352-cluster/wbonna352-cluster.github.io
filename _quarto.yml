@@ -12,10 +12,8 @@ book:
     - intro.qmd
     - infrastructure.qmd
     - serwisy.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
+    - framework.qmd
+    - processing.qmd
 
 format:
   html:
